@@ -19,6 +19,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        color: #fff;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -26,21 +27,46 @@
     </style>
   </head>
   <body>
-    <!-- Rating state start -->
+    <main class="main">
+      <!-- Rating state start -->
+      <div class="rating">
+        <img src="./images/icon-star.svg" alt="Icon star" />
+        <h2 class="rating-title">How did we do?</h2>
+        <p class="rating-description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul class="rating-list">
+          <li><button class="btn-rating">1</button></li>
+          <li><button class="btn-rating">2</button></li>
+          <li><button class="btn-rating">3</button></li>
+          <li><button class="btn-rating">4</button></li>
+          <li><button class="btn-rating">5</button></li>
+        </ul>
+        <button class="btn-primary" id="btn-submit">Submit</button>
+      </div>
 
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
+      <!-- Rating state end -->
+      <!-- Thank you state start -->
+      <div class="thank-you hidden">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="illustration thank you"
+        />
+        <!-- Add rating here -->
+        <p class="thank-you--rating">
+          You selected <span id="thank-you--rating">5</span> out of 5
+        </p>
+        <h2 class="thank-you--title">Thank you!</h2>
+        <p class="thank-you--description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <button class="btn-primary" id="btn-return">Rating again</button>
+      </div>
 
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
+      <!-- Thank you state end -->
+    </main>
 
     <footer class="attribution">
       Challenge by
